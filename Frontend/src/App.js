@@ -19,7 +19,7 @@ const App = () => {
         try {
             const response = await fetch(
                 // `http://localhost:5000/books?language=${language}&seed=${seed}&likes=${likes}&reviews=${reviews}&page=${pageNumber}`
-                `https://faker-fake-book-store-backend.onrender.com/books?language=${language}&seed=${seed}&likes=${likes}&reviews=${reviews}&page=${pageNumber}`
+                `https://fake-book-store-faker-backend.onrender.com/books?language=${language}&seed=${seed}&likes=${likes}&reviews=${reviews}&page=${pageNumber}`
             );
             const data = await response.json();
             setBooks(reset ? data : [...books, ...data]);
